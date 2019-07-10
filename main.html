@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>新年快乐！！！</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+    <style type="text/css">
+      h1{color: #155d74}
+      h3{color: #155d74}
+    </style>
+  </head>
+
+  <body id="page-top">
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <!--<li class="sidebar-brand">-->
+          <!--<a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>-->
+        <!--</li>-->
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top">开始</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#about">我想说的</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#services">愿你</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#portfolio">照片墙</a>
+        </li>
+          <!--<li class="sidebar-nav-item">-->
+              <!--<a class="js-scroll-trigger" href="#wait">未完待续</a>-->
+          <!--</li>-->
+          <li class="sidebar-nav-item">
+              <a class="js-scroll-trigger" href="#see">回忆</a>
+          </li>
+      </ul>
+    </nav>
+    <!--Background_song-->
+    <audio autoplay = "autoplay" loop = "loop">
+      <source src = "song/1-1.mp3"/>
+    </audio>
+
+    <!-- Header -->
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto" >
+        <h1 class="mb-1">Happy NewYear</h1>
+        <h3 class="mb-5">
+          <div>我们已经认识了
+            <div id="elapseClock"></div>
+          </div>
+        </h3>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">我想说的</a>
+      </div>
+      <div class="overlay"></div>
+    </header>
+    <script type="text/javascript" src="jquery_1_7.js"></script>
+    <script type="text/javascript">
+        function timeElapse(date){
+            var current = Date();
+            var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
+            var days = Math.floor(seconds / (3600 * 24));
+            seconds = seconds % (3600 * 24);
+            var hours = Math.floor(seconds / 3600);
+            if (hours < 10) {
+                hours = "0" + hours;
+            }
+            seconds = seconds % 3600;
+            var minutes = Math.floor(seconds / 60);
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            seconds = seconds % 60;
+            if (seconds < 10) {
+                seconds = "0" + seconds;
+            }
+            var result = "<span class=\"digit\">" + days + "</span> days <span class=\"digit\">" + hours + "</span> hours <span class=\"digit\">" + minutes + "</span> minutes <span class=\"digit\">" + seconds + "</span> seconds";
+            $("#elapseClock").html(result);
+        }
+        function get(){
+            timeElapse(new Date("2016/09/26"));
+        }
+        setInterval("get()",1000);
+
+    </script>
+    <!-- About -->
+    <section class="content-section bg-light" id="about">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>语言很多时候是假的，一起经历过的事情才是真的。</h2>
+            <p class="lead mb-5">也许是长大了，以前认为越长大越孤单，现在看世界就是个孤儿院，我们一生只在做两件事：用智慧证明孤独的价值，用爱来缓释孤独的寒冷………
+              </p>
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">愿你</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="content-section bg-primary text-white text-center" id="services">
+      <div class="container">
+        <div class="content-section-heading">
+          <!--<h3 class="text-secondary mb-0">Services</h3>-->
+          <h2 class="mb-5">新的一年 </h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <!--<span class="service-icon rounded-circle mx-auto mb-3">-->
+              <!--<i class="icon-screen-smartphone"></i>-->
+            <!--</span>-->
+            <h4>
+              <strong>愿你</strong>
+            </h4>
+            <p class="text-faded mb-0">每次流泪都是喜极而泣</p><i class="fas fa-heart"></i>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <!--<span class="service-icon rounded-circle mx-auto mb-3">-->
+              <!--<i class="icon-pencil"></i>-->
+            </span>
+            <h4>
+              <strong>愿你</strong>
+            </h4>
+            <p class="text-faded mb-0">每次筋疲力尽都有树可依</p>
+              <i class="fas fa-heart"></i>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <!--<span class="service-icon rounded-circle mx-auto mb-3">-->
+              <!--<i class="icon-like"></i>-->
+            <!--</span>-->
+            <h4>
+              <strong>愿你</strong>
+            </h4>
+            <p class="text-faded mb-0">学会释怀后一身轻</p>
+              <i class="fas fa-heart"></i>
+
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <!--<span class="service-icon rounded-circle mx-auto mb-3">-->
+              <!--<i class="icon-mustache"></i>-->
+            <!--</span>-->
+            <h4>
+              <strong>愿你</strong>
+            </h4>
+            <p class="text-faded mb-0">走出半生，归来仍是少年</p>
+              <i class="fas fa-heart"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Callout -->
+    <!--<section class="callout">-->
+      <!--<div class="container text-center">-->
+        <!--<h2 class="mx-auto mb-5">Welcome to-->
+          <!--<em>your</em>-->
+          <!--next website!</h2>-->
+        <!--&lt;!&ndash;<a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>&ndash;&gt;-->
+        <!--<a class="btn btn-primary btn-xl">Download Now!</a>-->
+      <!--</div>-->
+    <!--</section>-->
+
+    <!-- Portfolio -->
+    <section class="content-section" id="portfolio">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">属于你的</h3>
+          <h2 class="mb-5">照片墙</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b7.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b17.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b10.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+              <img class="img-fluid" src="img/b4.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b1.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b2.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b3.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b5.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b6.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b12.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b13.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b14.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b15.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b16.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b18.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b20.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b21.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b24.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b25.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/img_1.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b11.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/b9.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/img_2.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/img_3.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/img_4.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <img class="img-fluid" src="img/img_6.jpg" alt="">
+          </div>
+      </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section id="see">
+      <img class="img-fluid" src="img/1.gif" alt="">
+    </section>
+
+     Call to Action
+    <section class="content-section bg-primary text-white" id="wait">
+      <div class="container text-center">
+        <h2 class="mb-4">要继续我们的故事吗？</h2>
+        <a href="continue.html" class="btn btn-xl btn-light mr-4">好啊！</a>
+        <a href="break.html" class="btn btn-xl btn-dark">不，我不要</a>
+      </div>
+    </section>
+    <section class="content-section bg-light">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>写在最后</h2>
+            <p class="lead mb-5">感谢世界让我在这个年纪遇到了你
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/sainan.sun.54">
+              <i class="icon-social-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/sun_sainan">
+              <i class="icon-social-twitter" ></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="https://github.com/sainan-geek">
+              <i class="icon-social-github"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-0">Copyright &copy; sainan Website 2018</p>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+
+  </body>
+
+</html>
