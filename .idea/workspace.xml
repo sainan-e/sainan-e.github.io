@@ -188,6 +188,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="739" y="230" key="#com.intellij.ide.macro.MacrosDialog/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1577958961796" />
+    <state x="560" y="114" key="CommitChangelistDialog2" timestamp="1579688711640">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="560" y="114" key="CommitChangelistDialog2/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579688711640" />
     <state x="615" y="301" width="689" height="670" key="EditFileWatcherDialog" timestamp="1577959829767">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -216,10 +220,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="167" key="SettingsEditor/-1366.0.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1577959830861" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1579687877115">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1579688751554">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579687877115" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1579688751554" />
     <state x="-890" y="59" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578055490531">
       <screen x="-1366" y="0" width="1366" height="738" />
     </state>
